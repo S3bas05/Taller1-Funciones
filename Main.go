@@ -26,7 +26,7 @@ func estudiantes() {
 	notas := make([]int, cantidad)
 
 	for i := 0; i < cantidad; i++ {
-		fmt.Printf("Ingrese la nota del estudiante %d (0-100): ", i+2)
+		fmt.Printf("Ingrese la nota del estudiante %d (0-100): ", i+1)
 		fmt.Scanln(&notas[i])
 
 		for notas[i] < 0 || notas[i] > 100 {
